@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/video2.mp4') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* To ensure text is readable against the background video */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2cm; /* Adjust this value to change the spacing between the tabs */
+    position: relative;
+    z-index: 1; /* Ensure the tabs are above the background video */
+}
+
+nav ul li {
+    margin: 0;
+    width: 9cm;
+    height: 9cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 9cm; /* Center the text vertically */
+    color: #fff;
+    text-decoration: none;
+    background: #555;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    background: #777;
+    transform: scale(1.1); /* Scale up the tab on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Add a glowing effect */
+}
+
+#scenic-tab {
+    background: url('images/HELI-05848.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#charter-tab {
+    background: url('images/HELI-6080.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#landing-page {
+    padding: 50px 0;
+}
